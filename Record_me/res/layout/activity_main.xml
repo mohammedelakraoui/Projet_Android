@@ -18,35 +18,45 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="36dp"
         android:layout_marginRight="44dp"
-        android:background="@drawable/stop" 
+        android:background="@drawable/ejecter" 
         
         />
-
-    <SeekBar
-        android:id="@+id/seekBar1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_stop"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="48dp" />
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/seekBar1"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/mic_back" />
 
     <Button
         android:id="@+id/btn_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/btn_stop"
-        android:layout_alignLeft="@+id/seekBar1"
+        android:layout_alignLeft="@+id/progress_"
         android:layout_marginLeft="18dp"
         android:background="@drawable/start"
         
         />
- 
+
+    <SeekBar
+        android:id="@+id/progress_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_stop"
+        android:layout_marginBottom="18dp"
+        android:maxHeight="4dp"
+        android:minHeight="4dp"
+        android:thumb="@drawable/thumb" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/mic_back" />
+
+    <Chronometer
+        android:id="@+id/time_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+    
 </RelativeLayout>
