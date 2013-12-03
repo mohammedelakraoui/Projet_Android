@@ -111,27 +111,28 @@ View.OnClickListener action_start= new View.OnClickListener() {
 	    if(enable==false)
 	    {
 	    	// TODO evenement TICK du chronometre 
-
+	    	startRecording();
 	    	time_.setOnChronometerTickListener(new OnChronometerTickListener() {
 				
 				@Override
 				
 				public void onChronometerTick(Chronometer chronometer) {
 					// TODO Auto-generated method stub
+					
 					String chronoText = time_.getText().toString();
 			        String array[] = chronoText.split(":");
 			        cmpt=cmpt+Integer.parseInt(array[1]);
 			    	progress_.setProgress(cmpt/60);
 				}
 			});
-	     start_record.setBackgroundResource(R.drawable.stop); 	
+	    start_record.setBackgroundResource(R.drawable.stop); 	
 	    time_.start();
 		enable=true;
 	    }
 	    else{
 	    
 	    	time_.stop();
-	    	
+	    	stopRecording();
 	    	start_record.setBackgroundResource(R.drawable.start);
 	    	enable=false;
 	    }

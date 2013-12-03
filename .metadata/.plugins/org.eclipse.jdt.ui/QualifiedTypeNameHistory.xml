@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="android.widget.Button"/>
-<fullyQualifiedTypeName name="fr.esgi.record_me.R.id"/>
 <fullyQualifiedTypeName name="android.view.View"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.app.AlertDialog"/>
 <fullyQualifiedTypeName name="android.widget.ImageView"/>
 <fullyQualifiedTypeName name="android.view.SurfaceView"/>
+<fullyQualifiedTypeName name="android.media.MediaRecorder.AudioSource"/>
+<fullyQualifiedTypeName name="android.media.MediaRecorder"/>
+<fullyQualifiedTypeName name="fr.esgi.record_me.R.drawable"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="android.widget.Chronometer"/>
+<fullyQualifiedTypeName name="android.widget.SeekBar"/>
+<fullyQualifiedTypeName name="fr.esgi.record_me.R.id"/>
+<fullyQualifiedTypeName name="android.os.SystemClock"/>
+<fullyQualifiedTypeName name="android.widget.ProgressBar"/>
+<fullyQualifiedTypeName name="android.widget.Chronometer.OnChronometerTickListener"/>
 </qualifiedTypeNameHistroy>
